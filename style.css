@@ -1,121 +1,145 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
-*, *::after, *::before {
+* {
+  margin: 0;
   box-sizing: border-box;
-  margin: 0 auto;
 }
 
 html {
-  font-family: "Red Hat", sans-serif;
+  font-family: sans-serif;
+  font-size: 12px;
 }
 
-body {
+.image-one, .image-three, .text-two {
+  width: 375px;
+  height: 360px;
+}
+
+.treat-container h4 {
+  text-align: center;
+}
+
+.section-one, .treat-container, .section-three {
   display: flex;
-  align-items: center;
   justify-content: center;
-  /* position: relative; */
+  flex-wrap: wrap;
 }
 
-image {
-  display: block;
+.section-one {
+  height: auto;
+}
+
+.treat-title {
+  text-align: center;
+  width: 375px;
+  background-color: rgba(236, 236, 236, 0.572);
+  margin: 40px auto 0;
+  padding-top: 40px;
 }
 
 .text-one {
-  height: 400px;
-  margin: 20px;
   position: relative;
-}
-
-.our-treat {
+  padding-top: 10px;
   width: 375px;
-  height: 400px;
-  padding-bottom: 90px;
-  text-align: center;
-  background-color: #d8d8d8;
-  background-image: url("./images/cat_treats_fd_minnows_01 3.png");
-  background-position: center;
-  background-size: center;
-  position: relative;
-  background-repeat: no-repeat;
 }
-
-.our-treat h4 {
-  position: relative;
-  top: 40px;
-  font-weight: bolder;
+.text-one .text-header {
+  margin: 2em 40px;
 }
-
-.treat-text {
-  background-color: #d8d8d8;
-  margin: auto;
-  width: 375px;
-  padding: 30px 0;
-  text-align: center;
+.text-one h4 {
+  margin: 0 40px 0;
+  font-size: 1.5em;
+}
+.text-one p {
+  margin: 10px 40px 10px;
+}
+.text-one ul {
+  margin: 13px;
+  margin-right: 40px;
+}
+.text-one ul li {
+  margin-top: 1em;
 }
 
 .text-two {
-  margin-top: 30px;
+  padding: 30px;
 }
-
-.text-two ul {
+.text-two h4 {
+  margin: 40px 40px 0;
+}
+.text-two p {
+  margin: 10px 40px 10px;
+}
+.text-two li {
   list-style: none;
+  margin: 1em 0;
 }
-
 .text-two ul li:before {
   content: "✓";
-}
-
-.treat-container-two {
-  display: none;
+  margin-right: 5px;
 }
 
 .offer {
-  height: 2em;
-  width: 100%;
-  color: white;
-  background-color: #eba58b;
   text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #d78634;
+  color: white;
   position: fixed;
-  padding-top: 0.5em;
   bottom: 0;
-  left: 0;
-  z-index: 1;
+  width: 355px;
+  z-index: 2;
 }
 
-@media screen and (min-width: 575px) {
-  body {
-    /* background-color: red; */
-  }
+.treat-text {
+  position: absolute;
+  width: 100%;
+  bottom: 9%;
+  text-align: center;
+}
+.treat-text h4 {
+  margin-bottom: 0.7em;
+}
 
-  .flex-one {
-    display: flex;
-    /* flex-direction: column-reverse; */
-  }
-  .flex-one picture {
-    order: 2;
-    width: 400px;
-  }
-  .flex-one .text-one {
-    width: 400px;
-  }
+.treat {
+  background-color: rgba(236, 236, 236, 0.572);
+  background-image: url("./images/cat_treats_fd_minnows_01 3.png");
+  background-repeat: no-repeat;
+  padding-bottom: 110px;
+  position: relative;
+  width: 375px;
+  height: 500px;
+}
 
-  .treat-container-two {
+.image-three {
+  width: 375px;
+  height: 400px;
+}
+
+.treat-two {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .treat-two {
     display: block;
   }
 
-  .flex-two {
-    display: flex;
-  }
-  .flex-two picture {
-    width: 400px;
+  .treat-title {
+    width: 750px;
   }
 
-  .flex-three {
-    display: flex;
+  .image-one {
+    order: 2;
+  }
+
+  .text-one {
+    order: 1;
   }
 
   .offer {
     position: absolute;
-    bottom: 30%;
+    bottom: 10%;
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
