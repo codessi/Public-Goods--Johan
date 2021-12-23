@@ -1,52 +1,54 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
-*, *::after, *::before {
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*, *::after, *::before{
   box-sizing: border-box;
   margin: 0 auto;
 }
-
-html {
-  font-family: "Red Hat", sans-serif;
+html{
+font-family: "Red Hat", sans-serif;
 }
 
-body {
+body{
   display: flex;
   align-items: center;
   justify-content: center;
   /* position: relative; */
 }
 
-image {
+image{
   display: block;
 }
 
-.text-one {
+
+.text-one{
+
   height: 400px;
   margin: 20px;
   position: relative;
 }
 
-.our-treat {
+.our-treat{
   width: 375px;
   height: 400px;
   padding-bottom: 90px;
   text-align: center;
-  background-color: #d8d8d8;
-  background-image: url("./images/cat_treats_fd_minnows_01 3.png");
+  background-color: rgb(216, 216, 216);
+  background-image: url("./images/cat_treats_fd_minnows_01\ 3.png");
   background-position: center;
   background-size: center;
   position: relative;
   background-repeat: no-repeat;
 }
 
-.our-treat h4 {
+.our-treat h4{
   position: relative;
   top: 40px;
   font-weight: bolder;
 }
 
-.treat-text {
-  background-color: #d8d8d8;
+.treat-text{
+  background-color:rgb(216, 216, 216) ;
   margin: auto;
   width: 375px;
   padding: 30px 0;
@@ -59,63 +61,65 @@ image {
 
 .text-two ul {
   list-style: none;
+ 
 }
 
 .text-two ul li:before {
-  content: "✓";
+  content: '✓';
+}
+.treat-container-two{
+  display:none;
 }
 
-.treat-container-two {
-  display: none;
-}
-
-.offer {
+.offer{
   height: 2em;
   width: 100%;
   color: white;
-  background-color: #eba58b;
+  background-color: rgb(235, 165, 139);
   text-align: center;
   position: fixed;
-  padding-top: 0.5em;
+  padding-top: .5em;
   bottom: 0;
   left: 0;
   z-index: 1;
 }
-
 @media screen and (min-width: 575px) {
-  body {
+  body{
     /* background-color: red; */
   }
-
-  .flex-one {
+  .flex-one{
     display: flex;
     /* flex-direction: column-reverse; */
-  }
-  .flex-one picture {
-    order: 2;
+    picture{
+    order:2;
     width: 400px;
-  }
-  .flex-one .text-one {
-    width: 400px;
+   }
+   .text-one{
+     width: 400px;
+   }
+
   }
 
-  .treat-container-two {
+  
+  .treat-container-two{
     display: block;
   }
 
-  .flex-two {
+  .flex-two{
     display: flex;
-  }
-  .flex-two picture {
-    width: 400px;
+    picture{
+      width: 400px;
+    }
+    
   }
 
-  .flex-three {
+  .flex-three{
     display: flex;
   }
 
-  .offer {
+  .offer{
     position: absolute;
     bottom: 30%;
   }
-}/*# sourceMappingURL=style.css.map */
+
+}

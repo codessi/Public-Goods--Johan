@@ -1,0 +1,120 @@
+.text-one, .image-one, .treat, .image-three, .text-two{
+  width: 375px;
+  height: 360px;
+ 
+}
+
+*{
+  margin: 0;
+  // border: dotted;
+}
+
+.treat-container h4{
+  
+    
+    text-align: center;
+  
+}
+
+.section-one, .treat-container, .section-three{
+  display: flex;
+  justify-content: center;
+  // width: calc(400*2px);
+  flex-wrap: wrap;
+  
+}
+
+
+.treat-title{
+  text-align: center;
+  width: 375px;
+  background-color: rgba(236, 236, 236, 0.572);
+  margin: 40px auto 0;
+  padding-top: 40px;
+
+}
+
+.text-one{
+  position: relative;
+  h4{
+    margin: 40px 40px 0;
+  }
+  p{
+    margin: 10px 40px 10px;
+  }
+}
+
+.text-two{
+  h4{
+    margin: 40px 40px 0;
+  }
+  p{
+    margin: 10px 40px 10px;
+  }
+}
+
+
+.offer{
+
+  // margin: 0 auto;
+  text-align: center;
+  
+  left: 50%;
+  transform: translate(-50%, 0);
+  // border: dotted;
+  background-color: rgb(215, 134, 52) ;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+.treat-text{
+    position: absolute;
+    width: 100%;
+  bottom: 3%;
+  // left: 50%;
+  // transform: translate(-40%, 0);
+  // margin: 3em 0;
+  text-align: center;
+
+  // border: dotted blue;
+  h4{
+    margin-bottom: .7em;
+  }
+}
+.treat{
+  background-color: rgba(236, 236, 236, 0.572);
+  background-image: url('./images/cat_treats_fd_minnows_01\ 3.png');
+  padding-bottom: 110px;
+  position: relative;
+
+}
+
+.image-three{
+  width: 375px;
+  height: 400px;
+}
+
+.treat-two{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .treat-two{
+    display: block;
+  }
+  .treat-title{
+    width: 750px;
+  
+  }
+
+  .offer{
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+  }
+  // .treat:nth-child(1){
+  //   display: none;
+  // }
+}

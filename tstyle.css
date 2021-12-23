@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-one {
+  display: flex;
+  flex-wrap: wrap;
+  border: dotted;
+}
+.flex-one img, .flex-one .text-one {
+  margin: 0 auto;
+  width: 400px;
+}
+.flex-one img {
+  order: 1;
+  border: dotted;
+}
+.flex-one img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.flex-two {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.flex-two .treat-container {
+  position: relative;
+  margin: 0 auto;
+  background-color: gray;
+  flex-basis: 403px;
+  height: 481px;
+  border: dotted;
+  background-image: url("./images/cat_treats_fd_minnows_01 3.png");
+}
+.flex-two .treat-text {
+  border: dotted;
+  width: 100%;
+  position: absolute;
+  bottom: 8%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.flex-two .treat-container-two {
+  display: none;
+}
+
+.our-treat {
+  text-align: center;
+}
+
+.flex-three {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-three img, .flex-three .text-three {
+  margin: 0 auto;
+  width: 400px;
+}
+
+@media screen and (min-width: 275px) {
+  .treat-container-two {
+    display: block;
+  }
+}/*# sourceMappingURL=tstyle.css.map */
